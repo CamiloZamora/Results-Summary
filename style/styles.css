@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/* ----- General CSS ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    transition: all 0.8s ease;
+}
+img {
+    padding-right: 8px;
+    transition: all 0.8s ease;
+}
+.your-score, .reaction-word {
+    color: hsl(0, 0%, 100%);
+}
+.summary {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+.container {
+    margin: 0 auto;
+    width: 1440;
+    height: 100%;
+    display: flex;
+    box-shadow: 5px 5px 10px hsl(221, 100%, 96%);
+    border-radius: 0 30px 30px 0;
+}
+/* ----- Left side ----- */
+.left-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    flex: 1;
+    border-radius: 30px;
+    padding: 0 40px;
+    min-height: 500px;
+}
+.container-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 150px;
+    width: 150px;
+    border-radius: 50% 50%;
+}
+.your-score {
+    font-size: 60px;
+    font-weight: 700;
+}
+/*/ ----- Right side ----- */
+.right-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+    padding: 0 25px;
+    gap: 20px;
+    color: hsl(241, 100%, 89%);
+    min-height: 500px;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.box:hover img {
+    transform: scale(0.8);
+}
+.score {
+    transition: all 0.8s ease;
+}
+.box:hover .current-score {
+    transform: scale(1.2);
+}
+.box div {
+    display: flex;
+    align-items: center;
+}
+.reaction {
+    background: hsla(0, 100%, 67%, .1);
+}
+.memory {
+    background: hsla(39, 100%, 56%, .1);
+}
+.verbal {
+    background: hsla(166, 100%, 37%, .1);
+}
+.visual {
+    background: hsla(234, 85%, 45%, .1);
+}
+.reaction .word {
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+} 
+.memory .word {
+    color:  hsl(39, 100%, 56%);
+    font-weight: 700;
+} 
+.verbal .word {
+    color: hsl(166, 100%, 37%);
+    font-weight: 700;
+} 
+.visual .word {
+    color: hsl(234, 85%, 45%);
+    font-weight: 700;
+} 
+.score {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    padding-right: 5px;
+}
+.btn {
+    border: none;    
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 50px;
+    height: 50px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px hsl(252, 100%, 67%);
+}
+/* ----- Footer ----- */
+.footer { 
+    display: flex;
+    gap: 5px;
+    font-size: 11px; 
+    text-align: center; 
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 7%);
+}
+.footer a {
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+/* ----- Media queries ----- */
+@media (max-width: 600px){
+    body {
+        font-size: 13px;
+    }
+    .container {
+        display: block;
+        box-shadow: none;
+    }
+    .left-card {
+        font-size: 10px;
+        border-radius: 0 0 30px 30px;
+        padding-bottom: 20px;
+    }
+    .left-card, .right-card {
+        min-height: 300px;
+    }
+    .container-circle {
+        width: 80px;
+        height: 80px;
+        margin: 10px 0;
+    }
+    .your-score {
+        font-size: 30px;
+    }
+    .summary {
+        margin-top: 15px;
+    }
+    .btn {
+        height: 40px;
+    }
+    .footer {
+        font-size: 8px;
+    }
+}

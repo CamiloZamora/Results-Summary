@@ -5,43 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style/styles.css">
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">  
+    <div class="left-card">
+      <p class="your-result">Your Result</p>
+      <div class="container-circle">
+        <p class="your-score">76</p> 
+        <p>of 100</p>
+      </div>
+      <h2 class="reaction-word">Great</h2>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    <div class="right-card">
+      <hp class="summary">Summary</hp>
+      <div class="container-box">
+        <div class="reaction box">
+          <div class="category"><img class="icon" src="assets/images/icon-reaction.svg" alt="Reaction">Reaction</div>
+          <div class="points"> <span class="score">80</span> / 100</div>
+        </div>
+        <div class="memory box">
+          <div class="category"><img class="icon" src="assets/images/icon-memory.svg" alt="Reaction">Memory</div>
+          <div class="points"> <span class="score">92</span> / 100</div>
+        </div>
+        <div class="verbal box">
+          <div class="category"><img class="icon" src="assets/images/icon-verbal.svg" alt="Reaction">Verbal</div>
+          <div class="points"> <span class="score">61</span> / 100</div>
+        </div>
+        <div class="visual box">
+          <div class="category"><img class="icon" src="assets/images/icon-visual.svg" alt="Reaction">Visual</div>
+          <div class="points"> <span class="score">72</span> / 100</div>
+        </div>
+      </div>
+      <button class="btn" type="submit">Continue</button>
+    </div>
   </div>
+  <footer class="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a> 
+    Coded by <a href="#"> Camilo Zamora</a> - 2023 &copy;.
+  </footer>
 </body>
 </html>
