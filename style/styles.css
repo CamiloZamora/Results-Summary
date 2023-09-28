@@ -164,6 +164,7 @@ img {
     .container {
         display: block;
         box-shadow: none;
+        height: 100%;
     }
     .left-card {
         font-size: 10px;
