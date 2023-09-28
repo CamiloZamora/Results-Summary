@@ -87,7 +87,7 @@ img {
 .score {
     transition: all 0.8s ease;
 }
-.box:hover .current-score {
+.box:hover .score {
     transform: scale(1.2);
 }
 .box div {
